@@ -1,0 +1,98 @@
+const handleNavLinkClick = (e, fromPopup = false) => {
+        if (fromPopup) {
+            e.preventDefault(); // Prevent default only if called from the popup
+            vex.closeAll(); // Close the previous popup if open
+        }
+        
+        vex.dialog.open({
+            message: 'Sign up for our waitlist',
+            input: [
+                '<input name="email" type="email" placeholder="Email" required />',
+                '<input name="number" type="text" placeholder="Number" required />',
+                '<input name="firstName" type="text" placeholder="First Name" required />',
+                '<input name="lastName" type="text" placeholder="Last Name" required />'
+            ].join(''),
+            buttons: [
+                Object.assign(vex.dialog.buttons.YES, { text: 'Join' }),
+                Object.assign(vex.dialog.buttons.NO, { text: 'Cancel' })
+            ],
+            callback: function (data) {
+                if (!data) {
+                    console.log('Cancelled');
+                } else {
+                    console.log('Submitted Data:', data);
+                    // Here you would handle the form submission to your backend.
+                }
+            }
+        });
+    };
+
+    const handleHamburgerClick = () => {
+        // Use unsafeMessage to insert HTML content directly
+        const navContent = navLinks.map(item => 
+            `<a href="${item.href}" style="display:block; margin-bottom: 10px;" class="popup-nav-link">${item.label}</a>`
+        ).join('');
+
+        vex.dialog.open({
+            unsafeMessage: `<div style="text-align: center;">${navContent}</div>`,
+            buttons: [
+                Object.assign({}, vex.dialog.buttons.NO, { text: 'Close' })
+            ],
+            afterOpen: ($vexContent) => {
+                // Attach click event listeners to each nav link in the popup
+                $vexContent.find('.popup-nav-link').on('click', function(e) {
+                    handleNavLinkClick(e, true); // Pass true to indicate this is from the popup
+                });
+            },
+        });
+    };
+
+
+    // 
+
+    const handleNavLinkClick = (e) => {
+        e.preventDefault();
+        vex.dialog.open({
+            message: 'Sign up for our waitlist',
+            input: [
+                '<input name="email" type="email" placeholder="Email" required />',
+                '<input name="number" type="text" placeholder="Number" required />',
+                '<input name="firstName" type="text" placeholder="First Name" required />',
+                '<input name="lastName" type="text" placeholder="Last Name" required />'
+            ].join(''),
+            buttons: [
+                Object.assign(vex.dialog.buttons.YES, { text: 'Join' }),
+                Object.assign(vex.dialog.buttons.NO, { text: 'Cancel' })
+            ],
+            callback: function (data) {
+                if (!data) {
+                    console.log('Cancelled');
+                } else {
+                    console.log('Submitted Data:', data);
+                }
+            }
+        });
+    };
+
+    const handleHamburgerClick = () => {
+        // Generate navigation links for the popup
+        const navContent = navLinks.map(item => `<a href="javascript:void(0);" onclick="handleNavLink()" style="display:block; margin-bottom: 10px;">${item.label}</a>`).join('');
+
+        vex.dialog.open({
+            unsafeMessage: `<div style="text-align: left;" onclick="event.stopPropagation();">${navContent}</div>`, // Use `unsafeMessage` for HTML content
+            buttons: [
+                Object.assign({}, vex.dialog.buttons.NO, { text: 'Close' })
+            ],
+            afterOpen: function ($vexContent) {
+                window.handleNavLink = () => {
+                    $vexContent.data().vex.value = false;
+                    vex.close($vexContent.data().vex.id); 
+                    handleNavLinkClick(); 
+                };
+            },
+            beforeClose: function () {
+                // Clean up the global namespace
+                delete window.handleNavLink;
+            }
+        });
+    };
