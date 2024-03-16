@@ -80,7 +80,7 @@ const Nav = () => {
                         height = {50}
                     />
                 </a>
-                <div className="flex items-center p-2 sm:border sm:border-slate-gray rounded-md">
+                <div className="flex items-center p-2 sm:border sm:border-slate-gray rounded-md max-lg:hidden">
                     <input 
                         type="text"
                         placeholder="Search by properties, portfolio or location"

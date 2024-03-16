@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='flex justify-between mt-24 max-sm:flex-col max-sm:items-center'>
+      <div className='flex flex-col items-start sm:flex-row sm:justify-between mt-24'>
         <div className='flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer'>
           <img
             src={location}
@@ -65,7 +65,7 @@ const Footer = () => {
           />
           <p>254 Chapman Road, 16526 Newark, DE 19702, United States</p>
         </div>
-        <div className='flex flex-1 justify-end items-center gap-2 font-montserrat cursor-pointer'>
+        <div className='flex justify-start sm:justify-end items-center gap-2 font-montserrat cursor-pointer mt-4 sm:mt-0'>
           <img
             src={mailIcon}
             alt='mail sign'

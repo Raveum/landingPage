@@ -7,7 +7,7 @@ const CompanyCard = ({ imgURL, label, info}) => {
             <p className='px-5 font-montserrat text-xl leading-normal'>
             {info}
             </p>
-            <img src={imgURL} className='w-[410px] h-[321px]' />
+            <img src={imgURL} className='w-[370px] h-[300px]' />
         </div>
         
     );

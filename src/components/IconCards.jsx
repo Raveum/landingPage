@@ -8,7 +8,7 @@ const IconCards = ({ imgURL, label, info}) => {
         <h3 className='m-auto text-center mt-5 text-xl pb-2 leading-normal font-semibold font-palanquin'>
           {label}
         </h3>
-        <p className='m-auto text-center info-text'>
+        <p className='m-auto text-center info-text px-6'>
           {info}
         </p>
     </div>

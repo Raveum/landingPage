@@ -1,7 +1,39 @@
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
 import { heroRight } from '../assets'
+import vex from 'vex-js';
+import 'vex-js/dist/css/vex.css';
+import 'vex-js/dist/css/vex-theme-default.css';
+import 'vex-js/dist/css/vex-theme-wireframe.css';
 
+// Initialize Vex
+vex.defaultOptions.className = 'vex-theme-wireframe';
 
 const Hero = () => {
+    const openSignUpForm = () => {
+        vex.dialog.open({
+            message: 'Sign up for our waitlist',
+            input: [
+                '<input name="email" type="email" placeholder="Email" required />',
+                '<input name="number" type="text" placeholder="Number" required />',
+                '<input name="firstName" type="text" placeholder="First Name" required />',
+                '<input name="lastName" type="text" placeholder="Last Name" required />'
+            ].join(''),
+            buttons: [
+                Object.assign(vex.dialog.buttons.YES, { text: 'Join' }),
+                Object.assign(vex.dialog.buttons.NO, { text: 'Cancel' })
+            ],
+            callback: function (data) {
+                if (!data) {
+                    console.log('Cancelled');
+                } else {
+                    console.log('Submitted Data:', data);
+                    // Here you would handle the form submission.
+                }
+            }
+        });
+    };
+
     return (
         <section className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container ">
             <div className = "relative xl:w-2/4 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
@@ -20,13 +52,13 @@ const Hero = () => {
                         placeholder="Search by properties, portfolio or location"
                         className="input bg-white py-2 rounded-md"
                     />
-                    <button className="flex justify-center items-center px-5 h-8 bg-raveum-lightblue hover:bg-raveum-blue rounded-md transition duration-150 ease-in-out text-white">
+                    <button className="flex justify-center items-center px-5 h-8 bg-raveum-lightblue hover:bg-raveum-blue rounded-md transition duration-150 ease-in-out text-white" onClick={openSignUpForm}>
                         Search
                     </button>
                 </div>
 
             </div>
-            <div className='relative pt-28 flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40'>
+            <div className='relative pt-28 flex-1 max-lg:hidden flex justify-center items-center xl:min-h-screen max-xl:py-40'>
                 <img
                 src={heroRight}
                 alt='Property colletion'

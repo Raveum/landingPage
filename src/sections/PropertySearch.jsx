@@ -14,7 +14,7 @@ const PropertySearch = () => {
                 <p className = "font-montserrat text-xl leading-8 mt-6 mb-6 sm:max-w-base">Raveum helps you improve your investment spending into property businesses that adapt to the market situation. Raveum helps you improve your investment spending into property businesses that adapt to the business.</p>
             </div>
             
-            <div className="flex-1 space-y-4">
+            <div className="flex-1 space-y-4 max-w-[500px]">
                 {realEstateCards.map((card) => (
                 <EstateCard key={card.number} {...card} />
                 ))}

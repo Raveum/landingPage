@@ -41,12 +41,12 @@ const Newsletter = () => {
                     <img src={newsletter} alt="Newsletter" className="w-[694px] h-[463px]"/>
                 </div>                
                 <div className="flex-1 flex flex-col justify-center items-start text-left p-8 gap-5">
-                    <h2 className="text-4xl sm:text-3xl font-palanquin font-bold">Feel ready to invest yet?</h2>
-                    <p className="font-montserrat text-xl sm:text-lg leading-8 mt-6 mb-6 sm:max-w-base">
+                    <h2 className="text-2xl sm:text-3xl font-palanquin font-bold">Feel ready to invest yet?</h2>
+                    <p className="font-montserrat text-xl sm:text-base leading-8 mt-6 mb-6 sm:max-w-base">
                         Our expert team will deliver valuable insights, property recommendations, and exclusive access to new listings straight to your inbox. Sign up now and be the first to know about the best properties on the market.
                     </p>
                     <div id="Newsletter">
-                        <h2 className="text-3xl sm:text-2xl font-palanquin font-bold underline"
+                        <h2 className="text-xl sm:text-2xl font-palanquin font-bold underline"
                         onClick={openSignUpForm} >Subscribe to our Newsletter</h2>
                     </div>
                 </div>
