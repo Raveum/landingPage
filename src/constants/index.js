@@ -12,17 +12,17 @@ export const realEstateCards = [
     {
         number: 1,
         label: "Browse & Select",
-        subtext: "Raveum helps you improve your investment spending into property businesses that adapt to the market situation."
+        subtext: "Browse Raveum properties, each pre-vetted for their investment potential"
     },
     {
         number: 2,
         label: "Buy Shares",
-        subtext: "Raveum helps you improve your investment spending into property businesses that adapt to the market situation."
+        subtext: "Choose investment amount, select shares, sign terms electronically, and fund"
     },
     {
         number: 3,
-        label: "Browse & Select",
-        subtext: "Raveum helps you improve your investment spending into property businesses that adapt to the market situation."
+        label: "Earn Rental Income & Appreciation",
+        subtext: "All while Raveum manages the properties"
     },
     
 ];
