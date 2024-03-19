@@ -50,12 +50,13 @@ const Hero = () => {
 
     return (
         <section className="w-full flex xl:flex-row flex-col sm:pt-6 justify-center gap-4 max-container mx-auto ">
+            <img
+                src={mbHero}
+                alt="Mobile Hero"
+                className="block sm:hidden w-full h-auto px-0 pt-2"
+                style={{maxWidth: '100vw', height: 'auto'}}
+            />
             <div className="relative xl:w-2/4 sm:pt-10 flex flex-col items-center sm:items-start w-full px-4 sm:px-8">
-                <img
-                    src={mbHero}
-                    alt="Mobile Hero"
-                    className="block sm:hidden w-full max-w-xs mx-auto mb-4" // Adjust max-w-xs as needed for your design
-                />
                 <h1 className="mt-3 sm:mt-10 font-josefin text-[32px] sm:text-[56px] font-semibold text-center sm:text-left"> 
                     <span>Navigating the Real </span> 
                     <br/>
