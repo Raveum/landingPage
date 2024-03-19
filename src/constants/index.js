@@ -21,8 +21,8 @@ export const realEstateCards = [
     },
     {
         number: 3,
-        label: "Earn Rental Income & Appreciation",
-        subtext: "All while Raveum manages the properties"
+        label: "Relax & Earn",
+        subtext: "Earn Rental Income & Appreciation, all while Raveum manages the properties"
     },
     
 ];
