@@ -53,7 +53,7 @@ const Hero = () => {
             <img
                 src={mbHero}
                 alt="Mobile Hero"
-                className="block sm:hidden w-full h-auto px-0 pt-6"
+                className="block sm:hidden w-full h-auto px-0 pt-8"
                 style={{maxWidth: '100vw', height: 'auto'}}
             />
             <div className="relative xl:w-2/4 sm:pt-10 flex flex-col items-center sm:items-start w-full px-4 sm:px-8">
@@ -64,8 +64,11 @@ const Hero = () => {
                     <br/>
                     <span>Confidence</span>
                 </h1>
-                <p className="font-nunito text-sm sm:text-lg sm:leading-8 mt-3 mb-6 px-4 sm:px-0 sm:mr-10 text-center sm:text-left">
-                    Raveum helps you improve your investment spending into property businesses that adapt to the market situation. Raveum helps you improve your investment spending into property businesses that adapt to the business.
+                <p className="hidden sm:block font-nunito text-sm sm:text-lg sm:leading-8 mt-3 mb-6 px-4 sm:px-0 sm:mr-10 text-center sm:text-left">
+                    Raveum helps you improve your investment spending into property businesses that adapt to the market situation. Easily invest in US residential and commerical real estate. Maximize your wealth - unlock the benefits of real estate investing with rental income and appreciation.
+                </p>
+                <p className="sm:hidden font-nunito text-sm sm:text-lg sm:leading-8 mt-3 mb-6 px-4 text-center">
+                    Raveum helps you improve your investment spending into property businessses that adapt to the market situation.
                 </p>
 
                 <div className="flex items-center py-2 px-3 sm:py-3 sm:px-4 border border-slate-300 rounded-md w-full">
