@@ -1,18 +1,32 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React, {useState} from 'react';
 import { navLinks } from "../constants";
 import vex from 'vex-js';
 import vexDialog from 'vex-dialog';
 import 'vex-js/dist/css/vex.css';
 import 'vex-js/dist/css/vex-theme-default.css';
 import 'vex-js/dist/css/vex-theme-wireframe.css';
-import { headerLogo, hamburger } from '../assets'
+import { headerLogo, hamburger, searchImg } from '../assets'
 
 // Initialize Vex
 vex.registerPlugin(vexDialog);
 vex.defaultOptions.className = 'vex-theme-wireframe';
 
 const Nav = () => {
+
+    const [inputValue, setInputValue] = useState('');
+
+    const handleInputChange = (e) => {
+        setInputValue(e.target.value);
+    };
+
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            handleNavLinkClick(e);
+            setInputValue('');
+        }
+    };
+
     const openSignUpForm = () => {
         vex.dialog.open({
             message: 'Sign up for our waitlist',
@@ -70,8 +84,8 @@ const Nav = () => {
         });
     };
     return (
-        <header className="padding-x py-8 absolute z-10 w-full">
-            <nav className="flex justify-between gap-4 items-center max-container">
+        <header className="padding-x py-8 absolute z-10 w-full shadow-md">
+            <nav className="flex justify-between gap-10 items-center max-container">
                 <a href="/">
                     <img
                         src = {headerLogo}
@@ -80,24 +94,30 @@ const Nav = () => {
                         height = {50}
                     />
                 </a>
-                <div className="flex items-center p-2 sm:border sm:border-slate-gray rounded-md max-lg:hidden">
+                <div className="flex items-center p-2 sm:border bg-[#eaefff] rounded-md max-lg:hidden mr-28">
+                    <div className="flex justify-center items-center w-8 h-8">
+                        <img src={searchImg} alt="Search" className="w-5 h-5"/>
+                    </div>  
                     <input 
                         type="text"
                         placeholder="Search by properties, portfolio or location"
-                        className="input bg-white py-2 px-4 rounded-md"
+                        className="input py-2 bg-[#eaefff] px-4 rounded-md w-[350px]"
+                        value={inputValue}
+                        onChange={handleInputChange}
+                        onKeyDown={handleKeyDown}
                     />
-                    <button className="flex justify-center items-center w-8 h-8 bg-raveum-lightblue hover:bg-raveum-blue rounded-md transition duration-150 ease-in-out">
+                    <button className="flex justify-center items-center w-12 h-10 bg-[#002699] hover:bg-raveum-blue rounded-md transition duration-150 ease-in-out" onClick={handleNavLinkClick}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 text-white">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
                     </button>
                 </div>
-                <ul className='flex-1 flex justify-center items-center gap-14 max-lg:hidden'>
+                <ul className='flex-1 flex justify-center items-center gap-10 max-lg:hidden'>
                     {navLinks.map((item) => (
                         <li key={item.label}>
                             <a
                                 href={item.href}
-                                className='font-montserrat leading-normal text-lg text-slate-black hover:text-slate-gray transition-colors duration-300 ease-in-out'
+                                className='font-josefin leading-normal text-base text-slate-black hover:text-slate-gray transition-colors duration-300 ease-in-out'
                                 onClick={handleNavLinkClick}
                             >
                                 {item.label}
@@ -105,13 +125,13 @@ const Nav = () => {
                         </li>
                     ))}
                 </ul>
-                <div className='flex text-lg leading-normal font-medium font-montserrat max-lg:hidden '>
-                    <button className="flex justify-center items-center px-5 h-10 bg-raveum-lightblue hover:bg-raveum-blue rounded-md transition duration-150 ease-in-out text-white">
+                <div className='flex text-base leading-normal font-medium font-josefin max-lg:hidden '>
+                    <button className="flex justify-center items-center px-5 h-10 bg-raveum-lightblue hover:bg-raveum-blue rounded-md transition duration-150 ease-in-out text-white" onClick={handleNavLinkClick}>
                         Login
                     </button>
                 </div>
                 <div className='hidden max-lg:block' onClick={handleHamburgerClick}>
-                    <img src={hamburger} alt='hamburger icon' width={25} height={25} style={{cursor: 'pointer'}} />
+                    <img src={hamburger} alt='hamburger icon' width={25} height={25} style={{ cursor: 'pointer' }} />
                 </div>
             </nav>
         </header>

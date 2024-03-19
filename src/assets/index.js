@@ -25,6 +25,8 @@ import instagram from './instagram.svg'
 import facebook from './facebook.svg'
 import location from './location.svg'
 import mailIcon from './mailicon.svg'
+import searchIcon from './search.svg'
+import searchImg from './search.png'
 
 export {
     headerLogo,
@@ -54,4 +56,6 @@ export {
     facebook,
     location,
     mailIcon,
+    searchIcon,
+    searchImg,
 }
