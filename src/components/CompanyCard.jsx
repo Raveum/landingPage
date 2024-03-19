@@ -1,13 +1,13 @@
 const CompanyCard = ({ imgURL, label, info}) => {
     return (
-        <div className='flex flex-1 flex-col w-full max-sm:w-full sm:border sm:border-gray shadow-2xl rounded-[16px]'>
-            <h3 className='text-xl leading-normal font-semibold text-raveum-blue font-palanquin px-5 py-5'>
+        <div className='flex flex-1 flex-col w-full rounded-[16px] gap-y-2'>
+            <img src={imgURL} className='bg-blue-100/45 w-[370px] h-[300px]' />
+            <h3 className='text-lg mt-2 leading-normal font-semibold text-raveum-blue font-josefin'>
             {label}
             </h3>
-            <p className='px-5 font-montserrat text-xl leading-normal'>
+            <p className='font-nunito w-[370px] text-lg leading-normal'>
             {info}
             </p>
-            <img src={imgURL} className='w-[370px] h-[300px]' />
         </div>
         
     );

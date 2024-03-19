@@ -1,4 +1,4 @@
-import { re1, re2, re3, i1, i2, i3, i4, c1, c2, c3, r1, r2, r3, r4, facebook, instagram, twitter } from '../assets';
+import { re1, re2, re3, c1, c2, c3, r1, r2, r3, r4, facebook, instagram, twitter, investIcon } from '../assets';
 
 export const navLinks = [
     { href: "#my-portfolio", label: "My Portfolio" },
@@ -66,26 +66,49 @@ export const properties = [
     },
 ];
 
+// export const icons = [
+//     {
+//         imgURL: i1,
+//         label: "Consistent passive income",
+//         info: "Earn rental income and receive deposits quarterly, generating additional income streams to supplement your financial goals and build long-term wealth",
+//     },
+//     {
+//         imgURL: i2,
+//         label: "Property appreciation",
+//         info: "Watch your investment grow as the home appreciates, providing the potential for capital gains and the opportunity to leverage your investment",
+//     },
+//     {
+//         imgURL: i3,
+//         label: "Flexible investment amounts",
+//         info: "Invest anywhere from $100 to approximately $10,000 per house, making real estate investing more accessible to a wider range of investors",
+//     },
+//     {
+//         imgURL: i4,
+//         label: "Diversify with real estate",
+//         info: "Access historically consistent returns with low correlation to the stock market, providing potential stability and added diversification to your portfolio.",
+//     },
+// ];
+
 export const icons = [
     {
-        imgURL: i1,
-        label: "Consistent passive income",
-        info: "Earn rental income and receive deposits quarterly, generating additional income streams to supplement your financial goals and build long-term wealth",
+        imgURL: investIcon,
+        label: "High Rental Yield",
+        info: "8% - 10% rental yield and predictable cash flow",
     },
     {
-        imgURL: i2,
-        label: "Property appreciation",
-        info: "Watch your investment grow as the home appreciates, providing the potential for capital gains and the opportunity to leverage your investment",
+        imgURL: investIcon,
+        label: "Stable & Non-Correlated",
+        info: "The performance of commercial real estate is not correlated with stocks and bonds.",
     },
     {
-        imgURL: i3,
-        label: "Flexible investment amounts",
-        info: "Invest anywhere from $100 to approximately $10,000 per house, making real estate investing more accessible to a wider range of investors",
+        imgURL: investIcon,
+        label: "Capital Appreciation",
+        info: "Year on year capital appreciation (17% - 25% IRR)",
     },
     {
-        imgURL: i4,
-        label: "Diversify with real estate",
-        info: "Access historically consistent returns with low correlation to the stock market, providing potential stability and added diversification to your portfolio.",
+        imgURL: investIcon,
+        label: "Capital Preservation",
+        info: "Real estate is a hard asset that preserves capital",
     },
 ];
 
@@ -110,22 +133,18 @@ export const companies = [
 export const raveuminfo = [
     {
         imgURL: r1,
-        label: "Explore Raveum",
         info: "What is Raveum?",
     },
     {
         imgURL: r2,
-        label: "Explore Raveum",
         info: "What are Rental Assets?",
     },
     {
         imgURL: r3,
-        label: "Explore Raveum",
         info: "How to build your Portfolio?",
     },
     {
         imgURL: r4,
-        label: "Explore Raveum",
         info: "How to get started?",
     },
 ];

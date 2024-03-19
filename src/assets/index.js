@@ -28,6 +28,7 @@ import mailIcon from './mailicon.svg'
 import searchIcon from './search.svg'
 import searchImg from './search.png'
 import mbHero from './mbHero.png'
+import investIcon from './investIcon.png'
 
 export {
     headerLogo,
@@ -60,4 +61,5 @@ export {
     searchIcon,
     searchImg,
     mbHero,
+    investIcon,
 }
