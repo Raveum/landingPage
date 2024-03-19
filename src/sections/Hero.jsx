@@ -49,9 +49,9 @@ const Hero = () => {
     };
 
     return (
-        <section className="w-full flex xl:flex-row flex-col pt-6 justify-center gap-4 max-container mx-auto ">
-            <div className="relative xl:w-2/4 pt-10 flex flex-col items-start w-full px-4 sm:px-8">
-                <h1 className= "mt-10 font-josefin text-[56px] font-semibold"> 
+        <section className="w-full flex xl:flex-row flex-col sm:pt-6 justify-center gap-4 max-container mx-auto ">
+            <div className="relative xl:w-2/4 sm:pt-10 flex flex-col items-start w-full px-4 sm:px-8">
+                <h1 className= "sm:mt-10 mt-2 font-josefin text-[56px] font-semibold"> 
                     <span>Navigating the Real </span> 
                     <br/>
                     <span>Estate Market with</span>
