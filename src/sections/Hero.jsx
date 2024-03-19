@@ -53,7 +53,7 @@ const Hero = () => {
             <img
                 src={mbHero}
                 alt="Mobile Hero"
-                className="block sm:hidden w-full h-auto px-0 pt-2"
+                className="block sm:hidden w-full h-auto px-0 pt-4"
                 style={{maxWidth: '100vw', height: 'auto'}}
             />
             <div className="relative xl:w-2/4 sm:pt-10 flex flex-col items-center sm:items-start w-full px-4 sm:px-8">
