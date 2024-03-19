@@ -84,13 +84,13 @@ const Nav = () => {
         });
     };
     return (
-        <header className="padding-x py-6 absolute z-10 w-full shadow-md">
+        <header className="padding-x py-4 absolute z-10 w-full shadow-md">
             <nav className="flex justify-between gap-10 items-center max-container">
                 <a href="/">
                     <img
                         src = {headerLogo}
                         alt = "Logo"
-                        width = {180}
+                        width = {150}
                         height = {50}
                     />
                 </a>
@@ -101,7 +101,7 @@ const Nav = () => {
                     <input 
                         type="text"
                         placeholder="Search by properties, portfolio or location"
-                        className="input py-2 bg-[#eaefff] px-4 rounded-md w-[350px]"
+                        className="input py-2 bg-[#eaefff] px-4 rounded-md w-[300px] h-[30px]"
                         value={inputValue}
                         onChange={handleInputChange}
                         onKeyDown={handleKeyDown}
