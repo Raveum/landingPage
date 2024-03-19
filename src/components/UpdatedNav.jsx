@@ -84,7 +84,7 @@ const Nav = () => {
         });
     };
     return (
-        <header className="padding-x py-8 absolute z-10 w-full shadow-md">
+        <header className="padding-x py-6 absolute z-10 w-full shadow-md">
             <nav className="flex justify-between gap-10 items-center max-container">
                 <a href="/">
                     <img
@@ -94,7 +94,7 @@ const Nav = () => {
                         height = {50}
                     />
                 </a>
-                <div className="flex items-center p-2 sm:border bg-[#eaefff] rounded-md max-lg:hidden mr-28">
+                <div className="flex items-center p-2 sm:border bg-[#eaefff] rounded-md max-lg:hidden mr-24">
                     <div className="flex justify-center items-center w-8 h-8">
                         <img src={searchImg} alt="Search" className="w-5 h-5"/>
                     </div>  
@@ -112,7 +112,7 @@ const Nav = () => {
                         </svg>
                     </button>
                 </div>
-                <ul className='flex-1 flex justify-center items-center gap-10 max-lg:hidden'>
+                <ul className='flex-1 flex justify-center items-center gap-8 max-lg:hidden'>
                     {navLinks.map((item) => (
                         <li key={item.label}>
                             <a
