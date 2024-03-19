@@ -50,7 +50,7 @@ const Hero = () => {
 
     return (
         <section className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container ">
-            <div className = "relative xl:w-2/4 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
+            <div className = "relative xl:w-2/4 flex flex-col justify-center items-start w-full max-xl:padding-x">
                 <h1 className= "mt-8 font-josefin text-[56px] font-semibold"> 
                     <span>Navigating the Real </span> 
                     <br/>
@@ -62,32 +62,30 @@ const Hero = () => {
                     Raveum helps you improve your investment spending into property businesses that adapt to the market situation. Raveum helps you improve your investment spending into property businesses that adapt to the business.
                 </p>
 
-                <div className="flex items-center justify-between py-3 px-4 p-2 sm:border sm:border-slate-gray rounded-md w-full">
-                    <div className="flex items-center flex-grow">
-                        <div className="flex justify-center items-center w-5 h-5">
-                            <img src={searchImg} alt="Search" className="w-5 h-5"/>
-                        </div>
-                        <input 
-                            type="text"
-                            placeholder="Search by properties, portfolio or location"
-                            className="input bg-white py-2 rounded-md w-full h-[30px] flex-grow ml-2"
-                            value={inputValue}
-                            onChange={handleInputChange}
-                            onKeyDown={handleKeyDown}
-                        />
-                    </div>
-                    <button className="flex justify-center items-center px-5 h-8 bg-raveum-lightblue hover:bg-raveum-blue rounded-md transition duration-150 ease-in-out text-white" onClick={openSignUpForm}>
+                <div className="flex items-center py-2 px-3 sm:py-3 sm:px-4 border border-slate-300 rounded-md w-full">
+                    <input 
+                        type="text"
+                        placeholder="Search by properties, portfolio or location"
+                        className="bg-white py-1 pl-8 pr-3 sm:py-2 sm:pl-10 text-xs sm:text-sm rounded-md w-full h-[28px] sm:h-[30px] flex-grow focus:outline-none focus:ring-0 focus:border-slate-300"
+                        style={{backgroundImage: `url(${searchImg})`, backgroundPosition: 'left 10px center', backgroundSize: '20px 20px', backgroundRepeat: 'no-repeat'}}
+                        value={inputValue}
+                        onChange={handleInputChange}
+                        onKeyDown={handleKeyDown}
+                    />
+                    <button className="flex justify-center items-center px-2 sm:px-5 h-7 sm:h-8 bg-raveum-lightblue hover:bg-raveum-blue rounded-md transition duration-150 ease-in-out text-white text-xs sm:text-sm ml-2" onClick={openSignUpForm}>
                         Search
                     </button>
                 </div>
 
 
+
+
             </div>
-            <div className='relative pt-20 flex-1 max-lg:hidden flex justify-center items-center xl:min-h-screen max-xl:py-40'>
+            <div className='relative flex-1 max-lg:hidden flex justify-center items-center xl:min-h-screen max-xl:py-40'>
                 <img
                 src={heroRight}
                 alt='Property colletion'
-                width={770}
+                width={500}
                 height={582}
                 className='object-contain relative z-10'
                 />
