@@ -84,29 +84,29 @@ const Nav = () => {
         });
     };
     return (
-        <header className="padding-x py-2 absolute z-10 w-full shadow-md">
+        <header className="padding-x py-4 absolute z-10 w-full shadow-md">
             <nav className="flex justify-between gap-10 items-center max-container">
                 <a href="/">
                     <img
                         src = {headerLogo}
                         alt = "Logo"
-                        width = {150}
+                        width = {130}
                         height = {50}
                     />
                 </a>
                 <div className="flex items-center p-2 sm:border bg-[#eaefff] rounded-md max-lg:hidden mr-24">
-                    <div className="flex justify-center items-center w-8 h-8">
+                    <div className="flex justify-center items-center w-5 h-5">
                         <img src={searchImg} alt="Search" className="w-5 h-5"/>
                     </div>  
                     <input 
                         type="text"
                         placeholder="Search by properties, portfolio or location"
-                        className="input py-2 bg-[#eaefff] px-4 rounded-md w-[300px] h-[30px]"
+                        className="input py-2 bg-[#eaefff] px-4 rounded-md w-[350px] h-[10px]"
                         value={inputValue}
                         onChange={handleInputChange}
                         onKeyDown={handleKeyDown}
                     />
-                    <button className="flex justify-center items-center w-12 h-10 bg-[#002699] hover:bg-raveum-blue rounded-md transition duration-150 ease-in-out" onClick={handleNavLinkClick}>
+                    <button className="flex justify-center items-center w-6 h-6 bg-[#002699] hover:bg-raveum-blue rounded-md transition duration-150 ease-in-out" onClick={handleNavLinkClick}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 text-white">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
