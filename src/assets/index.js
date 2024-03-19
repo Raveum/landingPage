@@ -27,6 +27,7 @@ import location from './location.svg'
 import mailIcon from './mailicon.svg'
 import searchIcon from './search.svg'
 import searchImg from './search.png'
+import mbHero from './mbHero.png'
 
 export {
     headerLogo,
@@ -58,4 +59,5 @@ export {
     mailIcon,
     searchIcon,
     searchImg,
+    mbHero,
 }

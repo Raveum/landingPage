@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, {useState} from 'react';
-import { heroRight, searchImg } from '../assets'
+import { heroRight, searchImg, mbHero } from '../assets'
 import vex from 'vex-js';
 import 'vex-js/dist/css/vex.css';
 import 'vex-js/dist/css/vex-theme-default.css';
@@ -50,15 +50,20 @@ const Hero = () => {
 
     return (
         <section className="w-full flex xl:flex-row flex-col sm:pt-6 justify-center gap-4 max-container mx-auto ">
-            <div className="relative xl:w-2/4 sm:pt-10 flex flex-col items-start w-full px-4 sm:px-8">
-                <h1 className= "sm:mt-10 mt-3 font-josefin text-3xl sm:text-[56px] font-semibold"> 
+            <div className="relative xl:w-2/4 sm:pt-10 flex flex-col items-center sm:items-start w-full px-4 sm:px-8">
+                <img
+                    src={mbHero}
+                    alt="Mobile Hero"
+                    className="block sm:hidden w-full max-w-xs mx-auto mb-4" // Adjust max-w-xs as needed for your design
+                />
+                <h1 className="mt-3 sm:mt-10 font-josefin text-[32px] sm:text-[56px] font-semibold text-center sm:text-left"> 
                     <span>Navigating the Real </span> 
                     <br/>
                     <span>Estate Market with</span>
                     <br/>
                     <span>Confidence</span>
                 </h1>
-                <p className = "font-nunito text-base sm:text-lg leading-8 mt-2 sm:mt-6 mb-6 sm:max-w-base mr-10">
+                <p className="font-nunito text-sm sm:text-lg sm:leading-8 mt-3 mb-6 px-4 sm:px-0 sm:mr-10 text-center sm:text-left">
                     Raveum helps you improve your investment spending into property businesses that adapt to the market situation. Raveum helps you improve your investment spending into property businesses that adapt to the business.
                 </p>
 
