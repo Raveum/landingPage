@@ -49,9 +49,9 @@ const Hero = () => {
     };
 
     return (
-        <section className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container ">
-            <div className = "relative xl:w-2/4 flex flex-col justify-center items-start w-full max-xl:padding-x">
-                <h1 className= "mt-8 font-josefin text-[56px] font-semibold"> 
+        <section className="w-full flex xl:flex-row flex-col justify-center gap-4 max-container mx-auto ">
+            <div className="relative xl:w-2/4 pt-10 flex flex-col items-start w-full px-4 sm:px-8">
+                <h1 className= "mt-10 font-josefin text-[56px] font-semibold"> 
                     <span>Navigating the Real </span> 
                     <br/>
                     <span>Estate Market with</span>
@@ -76,12 +76,8 @@ const Hero = () => {
                         Search
                     </button>
                 </div>
-
-
-
-
             </div>
-            <div className='relative flex-1 max-lg:hidden flex justify-center items-center xl:min-h-screen max-xl:py-40'>
+            <div className='relative flex-1 max-lg:hidden flex justify-center pt-5 items-start'>
                 <img
                 src={heroRight}
                 alt='Property colletion'
