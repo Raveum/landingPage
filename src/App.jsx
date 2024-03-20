@@ -27,7 +27,7 @@ const App = () => (
     <section className = "bg-[#f5f8ff] padding-x pb-8">
       <Footer/>
     </section>
-    <p className='font-nunito text-base sm:text-lg py-4 sm:py-6 flex text-center justify-center'>Copyright © Raveum 2024. Crafted to house investing</p>
+    <p className='font-nunito text-sm py-4 flex text-center justify-center'>Copyright © Raveum 2024. Crafted to house investing</p>
   </main>
 );
 

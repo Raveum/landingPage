@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 
 
@@ -11,9 +10,9 @@ const PropertyCard = ({ imgURL, imgPop, imgRating, heartTrue, heartFalse, label,
             <img src={imgURL} className='absolute top-0 left-0 w-full h-full object-cover' alt="Property" />
 
             <div>
-                <img src={imgPop} style={{ width: '87px', height: '50px' }} className='absolute top-4 left-0' alt="Popular" />
-                <img src={imgRating} style={{ width: '36px', height: '36px' }} className='absolute top-4 right-0' alt="Rating" />
-                <img src={isLiked ? heartTrue : heartFalse} style={{ width: '36px', height: '36px', zIndex: 30 }} className='absolute top-4 right-10' alt="Heart" onClick={() => setIsLiked(!isLiked)} />
+              <img src={imgPop} style={{ width: '87px', height: '50px' }} className='absolute top-4 left-0' alt="Popular" />
+              <img src={imgRating} style={{ width: '36px', height: '36px' }} className='absolute top-4 right-0' alt="Rating" />
+              <img src={isLiked ? heartTrue : heartFalse} style={{ width: '36px', height: '36px', zIndex: 30 }} className='absolute top-4 right-10' alt="Heart" onClick={() => setIsLiked(!isLiked)} />
             </div>
             
             {/* Gradient Overlay */}
@@ -42,10 +41,10 @@ const PropertyCard = ({ imgURL, imgPop, imgRating, heartTrue, heartFalse, label,
               </div>
 
               {/* White background div directly below */}
-              <div className="bg-white rounded-md p-2 w-full mt-2 flex justify-between">
+              <div className="bg-white rounded-md px-5 py-2 w-full mt-2 flex justify-between">
                 {/* Content block for Cap Rate */}
                 <div className='flex text-center item-center flex-col'>
-                  <h3 className='text-xl font-extrabold font-nunito text-raveum-blue'>
+                  <h3 className='text-lg font-extrabold font-nunito text-raveum-blue'>
                     {capRate}
                   </h3>
                   <p className='font-nunito font-light text-xs'>
@@ -55,7 +54,7 @@ const PropertyCard = ({ imgURL, imgPop, imgRating, heartTrue, heartFalse, label,
                 
                 {/* Content block for Shares Available */}
                 <div className='flex text-center item-center flex-col'>
-                  <h3 className='text-xl font-extrabold font-nunito text-raveum-blue'>
+                <h3 className='text-lg font-extrabold font-nunito text-raveum-blue'>
                     {shares}
                   </h3>
                   <p className='font-nunito font-light text-xs'>
@@ -65,7 +64,7 @@ const PropertyCard = ({ imgURL, imgPop, imgRating, heartTrue, heartFalse, label,
                 
                 {/* Content block for Rental Yield */}
                 <div className='flex text-center item-center flex-col'>
-                  <h3 className='text-xl font-extrabold font-nunito text-raveum-blue'>
+                <h3 className='text-lg font-extrabold font-nunito text-raveum-blue'>
                     {rentalYield}
                   </h3>
                   <p className='font-nunito font-light text-xs'>
