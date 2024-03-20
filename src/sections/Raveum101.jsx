@@ -51,7 +51,7 @@ const Raveum101 = () => {
                         </div>
                     ))}
                 </Slider>
-                <div className="flex items-center justify-center mt-4">
+                <div className="flex items-center justify-center mt-8">
                     <button 
                         className="mx-2 z-10 bg-white bg-opacity-50 p-2 flex items-center justify-center"
                         onClick={() => sliderRef.current.slickPrev()}>
