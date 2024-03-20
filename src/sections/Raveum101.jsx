@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import { raveuminfo } from '../constants';

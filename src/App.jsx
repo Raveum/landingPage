@@ -24,9 +24,10 @@ const App = () => (
     <section className = "padding">
       <Newsletter/>
     </section>
-    <section className = "padding-x padding-t pb-8">
+    <section className = "bg-[#f5f8ff] padding-x pb-8">
       <Footer/>
     </section>
+    <p className='font-nunito text-base sm:text-lg py-4 sm:py-6 flex text-center justify-center'>Copyright © Raveum 2024. Crafted to house investing</p>
   </main>
 );
 
