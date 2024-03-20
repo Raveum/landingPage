@@ -5,7 +5,7 @@ const CompanyCard = ({ imgURL, label, info}) => {
             <h3 className='text-lg mt-2 leading-normal font-semibold text-raveum-blue font-josefin'>
             {label}
             </h3>
-            <p className='font-nunito w-[370px] text-lg leading-normal'>
+            <p className='font-nunito w-full max-w-[370px] text-base sm:text-lg leading-normal'>
             {info}
             </p>
         </div>
