@@ -29,6 +29,8 @@ import searchIcon from './search.svg'
 import searchImg from './search.png'
 import mbHero from './mbHero.png'
 import investIcon from './investIcon.png'
+import arrowLeft from './arrowLeft.png'
+import arrowRight1 from './arrowRight.png'
 
 export {
     headerLogo,
@@ -62,4 +64,6 @@ export {
     searchImg,
     mbHero,
     investIcon,
+    arrowLeft,
+    arrowRight1,
 }

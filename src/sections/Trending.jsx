@@ -84,7 +84,6 @@ const Trending = () => {
                         </div>
                     ))}
                 </Slider>
-                {/* Custom navigation buttons */}
                 <button 
                     className="absolute left-0 z-10 bg-white bg-opacity-50 p-2" 
                     onClick={() => sliderRef.current.slickPrev()}>
