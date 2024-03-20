@@ -220,19 +220,19 @@ export const footerLinks = [
         ],
     },
     {
-        title: "Stats",
-        links: [
-            { name: "Ranking", link: "/" },
-            { name: "Activity", link: "/" },
-        ],
-    },
-    {
         title: "My Account",
         links: [
             { name: "Profile", link: "/" },
             { name: "Dashboard", link: "/" },
             { name: "Favourite", link: "/" },
             { name: "Settings", link: "/" },
+        ],
+    },
+    {
+        title: "Stats",
+        links: [
+            { name: "Ranking", link: "/" },
+            { name: "Activity", link: "/" },
         ],
     },
 ];

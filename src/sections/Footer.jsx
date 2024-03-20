@@ -36,7 +36,7 @@ const Footer = () => {
         <div className='flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap'>
           {footerLinks.map((section) => (
             <div key={section.title}>
-              <h4 className='font-josefin text-lg sm:text-xl leading-normal font-semibold mb-6'>
+              <h4 className='font-josefin text-base sm:text-xl leading-normal font-semibold mb-6'>
                 {section.title}
               </h4>
               <ul>
