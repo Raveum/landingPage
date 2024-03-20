@@ -1,6 +1,6 @@
 const InfoCard = ({ imgURL, info}) => {
     return (
-        <div className='flex bg-pale-blue flex-1 flex-col w-full max-sm:w-full gap-5 rounded-[16px]'>
+        <div className='flex bg-[#f3f5f7] flex-1 flex-col w-full max-sm:w-full gap-5 rounded-[16px]'>
             <div className= "mt-5 flex item-center justify-center"> 
                 <img src={imgURL} className='w-[362px] h-[218px]' />
             </div>

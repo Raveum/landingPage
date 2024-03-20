@@ -1,4 +1,4 @@
-import { re1, re2, re3, c1, c2, c3, r1, r2, r3, r4, facebook, instagram, twitter, investIcon } from '../assets';
+import { re1, re2, re3, c1, c2, c3, r1, r2, r3, r4, facebook, instagram, twitter, investIcon, popular, rating, heartTrue, heartFalse } from '../assets';
 
 export const navLinks = [
     { href: "#my-portfolio", label: "My Portfolio" },
@@ -30,39 +30,42 @@ export const realEstateCards = [
 export const properties = [
     {
         imgURL: re1,
-        label: "12660 Ashford Point, Huston, TX 77082",
-        info: "4 bd | 5 ba | 1683 sqft",
-        stars: "4.94"
+        imgPop: popular,
+        imgRating: rating,
+        heartTrue: heartTrue,
+        heartFalse: heartFalse,
+        label: "The Regal",
+        location: "Laweyan, Surakarata",
+        pricing: "$22,000",
+        capRate: "8%",
+        shares: "2200",
+        rentalYield: "12%",
     },
     {
         imgURL: re2,
-        label: "6639 SW 116th PL, Miami, FL 33173",
-        info: "3 bd | 3 ba | 1490 sqft",
-        stars: "4.88"
+        imgPop: popular,
+        imgRating: rating,
+        heartTrue: heartTrue,
+        heartFalse: heartFalse,
+        label: "The Brainerd",
+        location: "Laweyan, Surakarata",
+        pricing: "$22,000",
+        capRate: "8%",
+        shares: "2200",
+        rentalYield: "12%",
     },
     {
         imgURL: re3,
-        label: "2293 Sacramento St, Vallejo, CA 94590",
-        info: "6 bd | 6 ba | 2583 sqft",
-        stars: "4.81"
-    },
-    {
-        imgURL: re1,
-        label: "12660 Ashford Point, Huston, TX 77082",
-        info: "4 bd | 5 ba | 1683 sqft",
-        stars: "4.94"
-    },
-    {
-        imgURL: re2,
-        label: "6639 SW 116th PL, Miami, FL 33173",
-        info: "3 bd | 3 ba | 1490 sqft",
-        stars: "4.88"
-    },
-    {
-        imgURL: re3,
-        label: "2293 Sacramento St, Vallejo, CA 94590",
-        info: "6 bd | 6 ba | 2583 sqft",
-        stars: "4.81"
+        imgPop: popular,
+        imgRating: rating,
+        heartTrue: heartTrue,
+        heartFalse: heartFalse,
+        label: "Tresury Tower",
+        location: "Laweyan, Surakarata",
+        pricing: "$22,000",
+        capRate: "8%",
+        shares: "2200",
+        rentalYield: "12%",
     },
 ];
 

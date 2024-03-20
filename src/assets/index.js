@@ -31,6 +31,10 @@ import mbHero from './mbHero.png'
 import investIcon from './investIcon.png'
 import arrowLeft from './arrowLeft.png'
 import arrowRight1 from './arrowRight.png'
+import popular from './popular.png'
+import rating from './rating.png'
+import heartTrue from './heartTrue.png'
+import heartFalse from './heartFalse.png'
 
 export {
     headerLogo,
@@ -66,4 +70,8 @@ export {
     investIcon,
     arrowLeft,
     arrowRight1,
+    popular,
+    rating,
+    heartTrue,
+    heartFalse,
 }

@@ -38,12 +38,12 @@ const Raveum101 = () => {
     return (
         <section className="max-container max-sm:mt-12">
             <div className="flex flex-col justify-start gap-5">
-                <h2 className="flex items-center text-4xl text-raveum-blue font-palanquin font-semibold">
+                <h2 className="flex items-center justify-center text-2xl font-josefin font-bold">
                     Raveum 101
                 </h2>
-                <p className="info-text">Learn more about Raveum and what you can do using it</p>
+                <p className="font-nunito text-lg flex items-center justify-center text-[#374151]">Lorem ipsum dolor sit amet consectetur. Integer convallis congue quam ipsum cum.</p>
             </div>
-            <div className="mt-16">
+            <div className="mt-12">
                 <Slider ref={sliderRef} {...settings}>
                     {raveuminfo.map((card) => (
                         <div key={card.label} className="px-2 gap-4">
@@ -55,12 +55,12 @@ const Raveum101 = () => {
                     <button 
                         className="mx-2 z-10 bg-white bg-opacity-50 p-2 flex items-center justify-center"
                         onClick={() => sliderRef.current.slickPrev()}>
-                        <img src={arrowLeft} alt="Previous" className="w-6 h-6"/>
+                        <img src={arrowLeft} alt="Previous" className="w-4 h-4"/>
                     </button>
                     <button 
                         className="mx-2 z-10 bg-white bg-opacity-50 p-2 flex items-center justify-center"
                         onClick={() => sliderRef.current.slickNext()}>
-                        <img src={arrowRight1} alt="Next" className="w-6 h-6"/>
+                        <img src={arrowRight1} alt="Next" className="w-4 h-4"/>
                     </button>
                 </div>
             </div>
